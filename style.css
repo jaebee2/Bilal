@@ -6,7 +6,7 @@
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/banner.png);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/COVER.jpeg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -21,7 +21,11 @@ nav{
 }
 nav img{
     width: 135px;
-    border-radius: 25px;
+    padding: 5px;
+    background: #f0f0f0;
+    border-radius: 15px 50px 30px 5px;
+    padding-bottom: 5px;
+  
     
 }
 .nav-links{
@@ -148,7 +152,10 @@ p{
     display: flex;
     justify-content: space-between;  
 }
-  
+  .row button{
+    border: solid black;
+    text-align:center;
+  }
 .course-col{
     flex-basis: 31%;
     background: #fff3f3;

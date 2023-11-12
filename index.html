@@ -10,7 +10,7 @@
     <section class="header">
         
         <nav>
-            <a href="index.html"><img src="images/IMG.png"></a>
+            <a href="index.html"><img src="images/BILAL LOGO.png"></a>
             <div class="nav-links" id="navLinks">  
                 <i class="fa fa-close" onclick="hideMenu()"></i>
                 <ul>
@@ -26,7 +26,7 @@
         
         <div class="text-box">
             <h1>BILAL IBNU RABAH INTERNATIONAL ACADEMY</h1>
-            <p>No4, 5/7 Road H. Kinkinau GRA,<br>Kaduna.</p>
+            <p>No4, 5/7 Chanchangi Road H. Kinkinau GRA,<br>Kaduna.</p>
             <a href="contact.html" class="hero-btn">Visit Us </a>
         </div>
     </section>
@@ -99,9 +99,25 @@
         
             <div class="row">
                 <div class="facility-col">
-                    <img src="images/library.png">
-                    <h3>World Class Library</h3>
-                    
+                    <button onclick="enableControls()" type="button">Enable</button>
+ 
+
+<video id="myVideo" width="320" height="176">
+  <source src="images/video1.mp4" type="video/mp4">
+  
+  Your browser does not support HTML5 video.
+</video>
+
+<script>
+let vid = document.getElementById("myVideo");
+
+function enableControls() { 
+  vid.controls = true;
+  vid.load();
+} 
+
+
+</script> 
                 </div>
                 <div class="facility-col">
                     <img src="images/basketball.png">
@@ -122,15 +138,16 @@
 <!-------- footer ---------->
 
 <section class="footer">
-        
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est<br>sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus.</p>
         <div class="icons">
-            <a href=""><i class="fa fa-facebook"></i></a>
-            <a href=""><i class="fa fa-twitter"></i></a>
-            <a href=""><i class="fa fa-instagram"></i></a>
-            <a href=""><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.youtube.com/c/EasyTutorialsVideo?sub_confirmation=1"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.youtube.com/c/EasyTutorialsVideo?sub_confirmation=1"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.youtube.com/c/EasyTutorialsVideo?sub_confirmation=1"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.youtube.com/c/EasyTutorialsVideo?sub_confirmation=1"><i class="fa fa-linkedin"></i></a>
             
         </div>
-        <a href="https://www.netlinks.site" class="footer-link"><p>Site By Netlinks</p></a>
+        <a href="https://www.youtube.com/c/EasyTutorialsVideo?sub_confirmation=1" class="footer-link"><p>made with <i class="fa fa-heart-o"></i> by Easy Tutorials</p></a>
 </section>    
   
   
