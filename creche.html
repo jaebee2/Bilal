@@ -71,23 +71,7 @@
     </form>
 
     <script>
-        function submitForm() {
-            var formData = {
-                regNumber: document.getElementById('regNumber').value,
-                name: document.getElementById('name').value,
-                class: document.getElementById('class').value,
-                address: document.getElementById('address').value,
-                dob: document.getElementById('dob').value,
-                state: document.getElementById('state').value,
-                nextOfKin: document.getElementById('nextOfKin').value,
-                fatherPhone: document.getElementById('fatherPhone').value,
-                motherPhone: document.getElementById('motherPhone').value,
-                entryDate: document.getElementById('entryDate').value,
-                exitDate: document.getElementById('exitDate').value
-            };
-
-            google.script.run.withSuccessHandler(showSuccessMessage).processForm(formData);
-        }
+        
 
         function showSuccessMessage(response) {
             alert('Form submitted successfully!');
