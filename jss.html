@@ -17,7 +17,7 @@
                 <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="course.html">COURSE</a></li>
+                  
                     
                     <li><a href="contact.html">CONTACT</a></li>
                 </ul>
@@ -32,8 +32,8 @@
         </div>
     </section>
     <h2>Student Registration Form<br>
-        CRECH</h2>
-    <form id="registrationForm" name="submit-to-google-sheet">
+        JSS</h2>
+    <form id="registrationForm">
         <label for="regNumber">Registration Number:</label>
         <input type="text" id="regNumber" name="regNumber" required><br>
 
@@ -103,21 +103,5 @@ function hideMenu() {
     navLinks.style.right = "-200px";
 }
     </script>
-    <form name="submit-to-google-sheet">
-        <input name="email" type="email" placeholder="Email" required>
-        <button type="submit">Send</button>
-      </form>
-      
-      <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbxFJE9D3g-FC9R2d521Qi5aKRsdlrVrBqGWYzery3OlCaMLFIoaTTZ3LibsefHj593qZA/exec'
-        const form = document.forms['submit-to-google-sheet']
-      
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => console.log('Success!', response))
-            .catch(error => console.error('Error!', error.message))
-        })
-      </script>
 </body>
 </html>
