@@ -326,13 +326,24 @@ h3{
 }
 
 /*--------------Footer---------------*/
+/* Add this to your existing style.css or create a new one */
 
-.footer{
-    width: 100%;
+.footer {
+    background-color: navy; /* Set the background color to navy blue */
+    color: #fff; /* Set the text color to white */
     text-align: center;
-    padding-top: 5%;
-    font-weight: 400;
+    padding: 20px 0;
 }
+
+.footer a {
+    color: #fff; /* Set the link color to white */
+}
+
+.footer a:hover {
+    text-decoration: underline; /* Add an underline effect on hover */
+}
+
+
 .footer h4{
     margin-bottom: 25px;
     margin-top: 20px;
@@ -538,6 +549,68 @@ h3{
 }
 
 
+
+.container-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.container-section h1 {
+    color: #333;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.container-col {
+    flex: 0 0 calc(33.33% - 20px);
+    background: #f1f1f1;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container-col h3 {
+    color: #333;
+}
+
+.container-col p {
+    color: #666;
+}
+
+/* Add this to your existing style.css or create a new one */
+
+.values {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #000; /* Set the background color to black */
+    color: #fff; /* Set the text color to white */
+}
+
+.values h1 {
+    color: #fff; /* Set the heading color to white */
+}
+
+.value-col {
+    flex: 0 0 calc(33.33% - 20px);
+    background: #333; /* Set the column background color to a darker shade of black */
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.value-col h3 {
+    color: #fff; /* Set the heading color to white */
+}
+
+.value-col p {
+    color: #ccc; 
+}
 
 
 
