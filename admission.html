@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BILAL IBNU RABAH</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="creach.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    </head>
+<body>
+    <section class="header">
+        
+        <nav>
+            <a href="index.html"><img src="images/BILAL LOGO.png"></a>
+            <div class="nav-links" id="navLinks">  
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="admission.html">ADMISSIONS</a></li>
+                    
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        
+        <div class="text-box">
+            <h1>BILAL IBNU RABAH INTERNATIONAL ACADEMY</h1>
+            <p>No4, 5/7 Road H. Kinkinau GRA,<br>Kaduna.</p>
+            <a href="contact.html" class="hero-btn">Visit Us </a>
+        </div>
+    </section>
+    <h2>Admissions</h2>
+        <section class="admission">
+            <h1>Admission Information</h1>
+    
+            <!-- Entry Requirements Section -->
+            <div class="entry-requirements">
+                <h2>Entry Requirements</h2>
+                <!-- Include Entry Requirements Content -->
+            </div>
+    
+            <!-- Tuition Fees Section -->
+            <div class="tuition-fees">
+                <h2>Tuition Fees</h2>
+                <!-- Include Tuition Fees Content -->
+            </div>
+    
+            <!-- Entry Date Section -->
+            <div class="entry-date">
+                <h2>Entry Date</h2>
+                <!-- Include Entry Date Content -->
+            </div>
+    <!-- Include this form within the "Application Form" section -->
+
+<form action="#" method="post" id="admissionForm">
+    <!-- Student Information -->
+    <h3>Student Information</h3>
+    <div>
+        <label for="studentPhoto">Student Photo</label>
+        <input type="file" id="studentPhoto" name="studentPhoto" accept="image/*" required>
+    </div>
+
+    <div>
+        <label for="registrationNo">Registration No</label>
+        <input type="text" id="registrationNo" name="registrationNo" readonly>
+    </div>
+
+    <div>
+        <label for="surname">Surname *</label>
+        <input type="text" id="surname" name="surname" required>
+    </div>
+
+    <div>
+        <label for="firstName">First Name *</label>
+        <input type="text" id="firstName" name="firstName" required>
+    </div>
+
+    <div>
+        <label for="otherNames">Other Names</label>
+        <input type="text" id="otherNames" name="otherNames">
+    </div>
+
+    <div>
+        <label for="permanentAddress">Permanent Home Address *</label>
+        <textarea id="permanentAddress" name="permanentAddress" rows="4" required></textarea>
+    </div>
+
+    <!-- ... Other Student Information Fields ... -->
+
+    <!-- Academic Records -->
+    <h3>Academic Records</h3>
+    <div>
+        <label for="previousSchool">Name and address of Previous School(s) with date</label>
+        <textarea id="previousSchool" name="previousSchool" rows="4"></textarea>
+    </div>
+
+    <!-- ... Other Academic Records Fields ... -->
+
+    <!-- Transfer Certificate -->
+    <div>
+        <label for="transferCertificate">TRANSFER CERTIFICATE</label>
+        <input type="file" id="transferCertificate" name="transferCertificate" accept=".pdf">
+    </div>
+
+    <!-- Recommendation by Head of School -->
+    <h3>Recommendation by Head of School</h3>
+    <div>
+        <label for="headOfSchool">Full Name of head of School</label>
+        <input type="text" id="headOfSchool" name="headOfSchool" required>
+    </div>
+
+    <div>
+        <label for="certify">I Certify that the above information is correct</label>
+        <input type="checkbox" id="certify" name="certify" required>
+    </div>
+
+    <div>
+        <label for="signature">Signature and Date</label>
+        <input type="text" id="signature" name="signature" required>
+    </div>
+
+    <!-- Submit Button -->
+    <div>
+        <button type="submit">Submit Application</button>
+    </div>
+</form>
+
+
+    <script>
+        
+        
+        var navLinks = document.getElementById("navLinks");
+
+function showMenu() {
+    navLinks.style.right = "0";
+}
+
+function hideMenu() {
+    navLinks.style.right = "-200px";
+}
+    </script>
+</body>
+</html>

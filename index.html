@@ -100,7 +100,7 @@
             </div>
     </section>
     <section class="container-section">
-        <h1>Our Values</h1>
+        <h1>What we offer</h1>
         <div class="row">
             <div class="container-col">
               <h3>Academics</h3>
@@ -134,7 +134,29 @@
             </div>
         </div>
     </section>
-
+    <section class="smooth-fade-image">
+        <h1>School Facilities</h1>
+        <div class="slideshow-container">
+            <div class="fade">
+                <img src="images/cafeteria.png" alt="Facility 1">
+                <div class="overlay">
+                    <p>Modern Classrooms</p>
+                </div>
+            </div>
+            <div class="fade">
+                <img src="images/library.png" alt="Facility 2">
+                <div class="overlay">
+                    <p>Science Labs</p>
+                </div>
+            </div>
+            <div class="fade">
+                <img src="images/basketball.png" alt="Facility 3">
+                <div class="overlay">
+                    <p>Sports Facilities</p>
+                </div>
+            </div>
+        </div>
+    </section>
 <!-------- footer ---------->
 
 <section class="footer">
@@ -154,6 +176,27 @@
         navLinks.style.right = "-200px";
     }
 </script> 
+<!-- Add this script to your existing HTML, preferably before the closing </body> tag -->
+
+<script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("fade");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1;
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 3000); // Change slide every 3 seconds (adjust as needed)
+    }
+</script>
+
     
 </body>
 </html>
