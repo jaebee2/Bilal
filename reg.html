@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BILAL IBNU RABAH</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    </head>
+<body>
+    <section class="header">
+        
+        <nav>
+            <a href="index.html"><img src="images/BILAL LOGO.png"></a>
+            <div class="nav-links" id="navLinks">  
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="admission.html">ADMISSIONS</a></li>
+                    
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        
+        <div class="text-box">
+            <h1>BILAL IBNU RABAH INTERNATIONAL ACADEMY</h1>
+            <p>No4, 5/7 Road H. Kinkinau GRA,<br>Kaduna.</p>
+            <a href="contact.html" class="hero-btn">Visit Us </a>
+        </div>
+    </section>
+    
+        
+    <!-- Include this form within the "Application Form" section -->
+<section class="form-container">
+    <form   id="admissionForm" name="submit-to-google-sheet">
+        <!-- ... Form fields ... -->
+   
+    <div>
+        <label for="registrationNo">Registration No</label>
+        <input type="text" id="registrationNo" name="registrationNo" readonly>
+    </div>
+    
+    <div>
+        <label for="surname">Surname *</label>
+        <input type="text" id="surname" name="surname" required>
+    </div>
+
+    <div>
+        <label for="firstName">First Name *</label>
+        <input type="text" id="firstName" name="firstName" required>
+    </div>
+
+    <div>
+        <label for="otherNames">Other Names</label>
+        <input type="text" id="otherNames" name="otherNames">
+    </div>
+
+    <div>
+        <label for="permanentAddress">Permanent Home Address *</label>
+        <textarea id="permanentAddress" name="permanentAddress" rows="4" required></textarea>
+    </div>
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required><br>
+
+    <label for="state">State of Origin:</label>
+    <input type="text" id="state" name="state" required><br>
+
+    <label for="nextOfKin">Next of Kin:</label>
+    <input type="text" id="nextOfKin" name="nextOfKin" required><br>
+
+    <label for="fatherPhone">Father's Phone Number:</label>
+    <input type="tel" id="fatherPhone" name="fatherPhone" required><br>
+
+    <label for="motherPhone">Mother's Phone Number:</label>
+    <input type="tel" id="motherPhone" name="motherPhone" required><br>
+    <label for="class">Entry Class:</label>
+        <input type="text" id="class" name="class" required><br>
+
+    <label for="entryDate">Date of Entry:</label>
+    <input type="date" id="entryDate" name="entryDate" required><br>
+
+    <label for="exitDate">Date of Leaving:</label>
+    <input type="date" id="exitDate" name="exitDate"><br>
+    <!-- ... Other Student Information Fields ... -->
+
+    <!-- Academic Records -->
+    <h3>Academic Records</h3>
+    <div>
+        <label for="previousSchool">Name and address of Previous School(s) with date</label>
+        <textarea id="previousSchool" name="previousSchool" rows="4"></textarea>
+    </div>
+
+    <!-- ... Other Academic Records Fields ... -->
+
+    <!-- Transfer Certificate -->
+    
+
+    <!-- Recommendation by Head of School -->
+    <h3>Recommendation by Head of School</h3>
+    <div>
+        <label for="headOfSchool">Full Name of head of School</label>
+        <input type="text" id="headOfSchool" name="headOfSchool" required>
+    </div>
+
+    <div>
+        <label for="certify">By submitting this form,I Certify that the above information is correct</label>
+        <input type="checkbox" id="certify" name="certify" required>
+    </div>
+
+   
+
+    <!-- Submit Button -->
+    <div>
+        <button type="submit">Submit Application</button>
+    </div>
+</form>
+<span id="msg"></span>
+</section>
+<!-------- footer ---------->
+
+<section class="footer">
+        <p>Copyright @ <a href="netlinks.site>">Netlinks</a></p>
+</section> 
+    <script>
+        
+        
+        var navLinks = document.getElementById("navLinks");
+
+function showMenu() {
+    navLinks.style.right = "0";
+}
+
+function hideMenu() {
+    navLinks.style.right = "-200px";
+}
+    </script>
+     <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzNSa6xeA9nZKKkGmDWOWr9rC69S-UtqIjL0-DQrsoys_3CRlBP3OJeasG27Q4gL_V-/exec'
+        const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Submission Success"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+
+                }, 2000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>

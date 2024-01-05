@@ -142,9 +142,9 @@ h1{
     font-weight: 600;
 }
 p{
-    color: #777;
-    font-size: 14px;
-    font-weight: 300;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
     line-height: 22px;
     padding: 10px;
 }
@@ -153,7 +153,12 @@ p{
     display: flex;
     justify-content: space-between;  
 }
- 
+.entry-requirements{
+    background-color: #000;
+ }
+ .entry-requirements, li{
+    color: #fff;
+ }
 .course-col{
     flex-basis: 31%;
     background: #fff3f3;
@@ -167,6 +172,7 @@ h3{
     text-align: center;
     font-weight: 600;
     margin: 10px 0;
+    display: inline-block;
 }
 .course-col:hover{
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);

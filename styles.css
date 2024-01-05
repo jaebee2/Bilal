@@ -15,10 +15,12 @@ body {
 form {
     max-width: 600px;
     margin: 0 auto;
-    background-color: #147782;
+    background-color: mistyrose;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     padding: 30px;
+    
+    
 }
 h1{
     color: whitesmoke;
@@ -50,7 +52,7 @@ textarea {
     width: 100%;
     padding: 12px;
     box-sizing: border-box;
-    border: 1px solid #ddd;
+    border: 1px solid black;
     border-radius: 4px;
     margin-bottom: 15px;
     background-color: #f9f9f9;
@@ -79,4 +81,12 @@ button:hover {
     background-size: cover;
     position: relative;
     overflow: hidden;
+}
+.form-container{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/admission.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+
 }
