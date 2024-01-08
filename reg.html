@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BILAL IBNU RABAH</title>
-    <link rel="stylesheet" href="style.css">
     
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reg.css">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
@@ -35,17 +37,17 @@
     
         
     <!-- Include this form within the "Application Form" section -->
-<section class="form-container">
-    <form   id="admissionForm" name="submit-to-google-sheet">
+<section class="registration-form">
+    <form >
         <!-- ... Form fields ... -->
    
     <div>
         <label for="registrationNo">Registration No</label>
-        <input type="text" id="registrationNo" name="registrationNo" readonly>
+        <input type="text" id="registrationNo" name="registrationNo" required>
     </div>
     
     <div>
-        <label for="surname">Surname *</label>
+        <label for="surname">Surname </label>
         <input type="text" id="surname" name="surname" required>
     </div>
 
@@ -90,7 +92,7 @@
     <!-- Academic Records -->
     <h3>Academic Records</h3>
     <div>
-        <label for="previousSchool">Name and address of Previous School(s) with date</label>
+        <label for="previousSchool">Name and address of Previous School(s) </label>
         <textarea id="previousSchool" name="previousSchool" rows="4"></textarea>
     </div>
 
@@ -102,7 +104,7 @@
     <!-- Recommendation by Head of School -->
     <h3>Recommendation by Head of School</h3>
     <div>
-        <label for="headOfSchool">Full Name of head of School</label>
+        <label for="headOfSchool">Full Name And Email of head of School</label>
         <input type="text" id="headOfSchool" name="headOfSchool" required>
     </div>
 
@@ -115,8 +117,8 @@
 
     <!-- Submit Button -->
     <div>
-        <button type="submit">Submit Application</button>
-    </div>
+        <button type="button" onclick="submitForm()">Submit Application</button>
+      </div>
 </form>
 <span id="msg"></span>
 </section>
@@ -138,23 +140,6 @@ function hideMenu() {
     navLinks.style.right = "-200px";
 }
     </script>
-     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbzNSa6xeA9nZKKkGmDWOWr9rC69S-UtqIjL0-DQrsoys_3CRlBP3OJeasG27Q4gL_V-/exec'
-        const form = document.forms['submit-to-google-sheet']
-      const msg = document.getElementById("msg")
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-                msg.innerHTML = "Submission Success"
-                setTimeout(function(){
-                    msg.innerHTML = ""
-
-                }, 2000)
-                form.reset()
-            })
-            .catch(error => console.error('Error!', error.message))
-        })
-      </script>
+    
 </body>
 </html>
