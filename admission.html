@@ -1,14 +1,12 @@
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BILAL IBNU RABAH</title>
-<link rel="stylesheet" href="reg.css">
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="styles.css">
-
-<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
-</head>
+<!DOCTYPE html>
+<html lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BILAL IBNU RABAH</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="creach.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    </head>
 <body>
     <section class="header">
         
@@ -19,7 +17,6 @@
                 <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="admission.html">ADMISSIONS</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
                 </ul>
             </div>
@@ -32,155 +29,113 @@
             <a href="contact.html" class="hero-btn">Visit Us </a>
         </div>
     </section>
-    <section class="admission">
-        <h1>Admission Information</h1>
+    <h2>Student Registration Form</h2>
+    <form id="registrationForm" name="submit-to-google-sheet">
+        
+        <label for="autoRegNumber">Student Number :</label>
+        <input type="text" id="autoRegNumber" name="regNumber" readonly><br>
+        
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
 
-        <!-- Entry Requirements Section -->
-        <div class="admission-entry-requirements">
-            <h2>Entry Requirements</h2>
-<h1>All prospective applicants are kindly requested to submit their application forms accompanied <br>
-    by the necessary documents as outlined in the provided checklist. Failure to submit the necessary documents<br>
-       may result in the delay or rejection of your application.<br>
-       We appreciate your attention to these requirements and wish you the best in your application process. </h1>
-            <li>Recommendation leter</li><br>
-            <li>Academic Qualification</li><br>
-            <li>Complete Application form </li>
-            <li>Birth Certificate </li>
+        <label for="class">Class:</label>
+        <input type="text" id="class" name="class" required><br>
 
+        <label for="address">Home Address:</label>
+        <input type="text" id="address" name="address" required><br>
 
-        </div>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br>
 
-       
-<section class="admission-class-info">
-    <h2>Class Entry and Tuition Fees</h2>
+        <label for="state">State of Origin:</label>
+        <input type="text" id="state" name="state" required><br>
 
-    <div class="class-entry">
-        <h3>CRECH</h3>
-        <p>Entry Year: 2024</p>
-        <p>Tuition Fee: ? per term</p>
-    </div>
+        <label for="nextOfKin">Next of Kin:</label>
+        <input type="text" id="nextOfKin" name="nextOfKin" required><br>
 
-    <div class="class-entry">
-        <h3>PRENURSERY SCHOOL</h3>
-        <p>Entry Year: 2024</p>
-        <p>Tuition Fee: ? per term</p>
-    </div>
+        <label for="fatherPhone">Father's Phone Number:</label>
+        <input type="tel" id="fatherPhone" name="fatherPhone" required><br>
 
-    <div class="class-entry">
-        <h3>NURSERY SCHOOL</h3>
-        <p>Entry Year: 2024</p>
-        <p>Tuition Fee: ? per term</p>
-    </div>
-    <div class="class-entry">
-        <h3>PRIMARY SCHOOL</h3>
-        <p>Entry Year: 2024</p>
-        <p>Tuition Fee: ? per term</p>
-    </div>
-    <div class="class-entry">
-        <h3>JUNIOR SECONDARY SCHOOL</h3>
-        <p>Entry Year: 2024</p>
-        <p>Tuition Fee: ? per term</p>
-    </div>
-    <div class="class-entry">
-        <h3>SENIOR SECONDARY SCHOOL</h3>
-        <p>Entry Year: 2024</p>
-        <p>Tuition Fee: ? per term</p>
-    </div>
-    <div class="class-entry">
-        <h3>HIGER NATIONAL DIPLOMA</h3>
-        <p>Entry Year: 2024</p>
-        <p>Tuition Fee: ? per term</p>
-    </div>
-    
+        <label for="motherPhone">Mother's Phone Number:</label>
+        <input type="tel" id="motherPhone" name="motherPhone" required><br>
 
-    <!-- Add similar entries for other classes -->
+        <label for="entryDate">Date of Entry:</label>
+        <input type="date" id="entryDate" name="entryDate" required><br>
 
-</section>
+        <label for="exitDate">Date of Leaving:</label>
+        <input type="date" id="exitDate" name="exitDate"><br>
 
-       
-    
-<!---------- sections ----------->
-    
-    <section class="admision-course">
-        <h1>SECTIONS</h1>
-       <p>Select an entry level to complete registration form </p>
-        <div class="row">
-            <div class="course-col">
-            <a href="reg.html"><h3>click to register</h3><h2>CRECH</h2></a>
-            </div>
-            <div class="course-col">
-                <a href="reg.html"><h3>click to register</h3><h2>PRENURSERY</h2></a>
-            </div>
-            <div class="course-col">
-                <a href="reg.html"><h3>click to register</h3><h2>NURSERY</h2></a>
-                
-            </div>
-            <div class="course-col">
-                <a href="reg.html"><h3>click to register</h3><h2>PRIMARY</h2></a>
-                
-            </div>
-            <div class="course-col">
-                <a href="reg.html"><h3>click to register</h3><h2>JSS</h2></a>
-                
-            </div>
-            <div class="course-col">
-                <a href="reg.html"><h3>click to register</h3><h2>sss</h2></a>
-                
-            </div>
-            <div class="course-col">
-                <a href="reg.html"><h3>click to register</h3><h2>DIPLOMA</h2></a>
-                
-            </div>
-        </div>
-    </section>
+        <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+    <div id="successMessage" style="display: none;">
+        <p>Form submitted successfully!</p>
+      </div>
+    <script>
+        
 
-<!-------- footer ---------->
+        
+        var navLinks = document.getElementById("navLinks");
 
-<section class="admission-footer">
-        <p>Copyright @ <a href="netlinks.site>">Netlinks</a></p>
-</section>    
-  
-  
-<!----JavaScript for toggle menu---->
-<script>
-    var navLinks = document.getElementById("navLinks");
+function showMenu() {
+    navLinks.style.right = "0";
+}
 
-    function showMenu() {
-        navLinks.style.right = "0";
-    }
+function hideMenu() {
+    navLinks.style.right = "-200px";
+}
+    </script>
+    <script>
+      function showSuccessMessage() {
+        var successMessage = document.getElementById('successMessage');
+        successMessage.style.display = 'block';
+      }
+        // Add this function to generate the registration number
+function generateRegistrationNumber() {
+    var prefix = "BIRIA"; // You can customize the prefix
+    var year = new Date().getFullYear().toString().substr(-2); // Get the last two digits of the current year
+    var randomDigits = Math.floor(100000 + Math.random() * 900000); // Generate 6 random digits
 
-    function hideMenu() {
-        navLinks.style.right = "-200px";
-    }
-</script> 
-<!-- Add this script to your existing HTML, preferably before the closing </body> tag -->
+    var registrationNumber = prefix + "/" + randomDigits + "/" + year;
 
-<script>
-    var slideIndex = 0;
-    showSlides();
+    // Set the generated number to the input field
+    document.getElementById('autoRegNumber').value = registrationNumber;
+}
 
-    function showSlides() {
-        var i;
-        var slides = document.getElementsByClassName("fade");
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
+// Modify the submitForm function to include the auto-generated registration number
+function submitForm() {
+    generateRegistrationNumber(); // Call the function to generate the registration number
+
+    var form = document.getElementById('registrationForm');
+    var formData = new FormData(form);
+
+    // The rest of your form submission code
+    fetch('https://script.google.com/macros/s/AKfycby_pYHi61GsPUq8iMvIXb9iBdi4bHKJUrH8-1Ya7bBoQ8EGNLrJKe3y-VWyXsUwDDxcUQ/exec', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
         }
-        slideIndex++;
-        if (slideIndex > slides.length) {
-            slideIndex = 1;
-        }
-        slides[slideIndex - 1].style.display = "block";
-        setTimeout(showSlides, 3000); // Change slide every 3 seconds (adjust as needed)
+        return response.text();
+    })
+    .then(data => {
+    if (data.includes('Duplicate registration number.')) {
+      alert('Duplicate registration number. Please generate a new one.');
+    } else {
+      console.log(data);
+      showSuccessMessage();
+      form.reset();
+      generateRegistrationNumber();
     }
-</script>
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
+}
 
-    
+  
+      </script>
+   
 </body>
 </html>
-
-
-
-
-
-
-
